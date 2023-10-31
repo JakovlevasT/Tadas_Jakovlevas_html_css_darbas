@@ -19,6 +19,9 @@ html {
 }
 body {
   background-color: var(--light-1);
+  max-width: 428px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .underline {
   text-decoration: underline;
@@ -351,8 +354,169 @@ footer {
   font-size: 20px;
   line-height: 20px;
 }
+/* media 750 */
+@media screen and (min-width: 750px) {
+  body {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  header {
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 750px;
+  }
+  .hero {
+    padding-left: 40px;
+    padding-right: 330px;
+  }
+  .hero-text {
+    padding-bottom: 35px;
+  }
+  .snow-man {
+    height: 412px;
+    width: 426px;
+    top: 1px;
+    left: 50%;
+  }
+  .sign-up-btn {
+    margin-bottom: 120px;
+  }
+  /* nft */
+  .free-nft {
+    border-radius: 15px;
+    margin-bottom: 80px;
+  }
+  .line,
+  .line-2 {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .companies-icons {
+    margin-bottom: 40px;
+  }
+  .rare-text {
+    padding-bottom: 40px;
+  }
+  .hero-but-different {
+    padding-left: 40px;
+  }
+  .hero-but-different > .hero-info {
+    padding-top: 50px;
+  }
+  .hero-but-different > .hero-title {
+    padding-right: 320px;
+  }
+  .hero-but-different > .sign-up-btn {
+    margin-bottom: 60px;
+    margin-top: 20px;
+  }
+  .different-hero-text {
+    padding-right: 338px;
+  }
+  .green-nft-full-size {
+    top: 71px;
+    left: 65%;
+  }
+  .cta-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer {
+    text-align: center;
+  }
+}
+/* ================================================= */
+@media screen and (min-width: 1080px) {
+  body {
+    max-width: 1080px;
+  }
+  .container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  header {
+    padding-left: 60px;
+    padding-right: 60px;
+    max-width: 1080px;
+  }
+  .hero {
+    padding-left: 60px;
+    padding-right: 530px;
+  }
+  .hero-text {
+    padding-bottom: 40px;
+  }
+  .snow-man {
+    height: 512px;
+    width: 500px;
+    top: -37px;
+    left: 50%;
+  }
+  .sign-up-btn {
+    margin-bottom: 100px;
+  }
+  /* nft */
+  .free-nft {
+    max-width: 1000px;
+    margin-bottom: 100px;
+  }
+  .line,
+  .line-2 {
+    width: 1040px;
+  }
+  .companies-icons {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+    margin-bottom: 70px;
+  }
+  .invis {
+    display: inline-block;
+  }
+  .super-rare {
+    margin-bottom: 60px;
+  }
+  .rare-text {
+    padding-bottom: 50px;
+  }
+  .hero-but-different {
+    padding-left: 50px;
+  }
+  .hero-but-different > .hero-title {
+    padding-right: 643px;
+  }
+  .different-hero-text {
+    padding-right: 638px;
+  }
+  footer {
+    text-align: left;
+  }
+  .foot-flex span,
+  .foot-flex p {
+    font-size: 20px;
+    color: var(--dark-4);
+  }
+  .foot-flex {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 71px;
+    padding-top: 120px;
+  }
+}
+/* ======================================================= */
 /* medias 1440px */
 @media screen and (min-width: 1440px) {
+  body {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .container {
     padding-left: 80px;
     padding-right: 80px;
@@ -397,8 +561,10 @@ footer {
     font-size: 20px;
   }
   .snow-man {
-    left: 600px;
-    top: 51px;
+    width: 700px;
+    height: 700px;
+    left: 656px;
+    top: 101px;
   }
   .sign-up-btn {
     margin-bottom: 200px;
@@ -416,10 +582,9 @@ footer {
   }
   /* companies */
   .invis {
-    display: block;
+    display: none;
   }
   .companies-icons {
-    grid-template-columns: repeat(5, 1fr);
     gap: 106.5px;
     margin-bottom: 120px;
   }
@@ -478,16 +643,5 @@ footer {
   }
   .bigger-gap {
     padding-top: 0;
-  }
-  .foot-flex span,
-  .foot-flex p {
-    font-size: 20px;
-    color: var(--dark-4);
-  }
-  .foot-flex {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 71px;
-    padding-top: 120px;
   }
 }
