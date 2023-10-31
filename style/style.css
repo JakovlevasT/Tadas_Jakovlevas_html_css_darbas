@@ -11,6 +11,15 @@ html {
   --light-2: #eee;
   --orange: #ff8139;
 }
+.dark-1 {
+  color: var(--dark);
+}
+.dark-2 {
+  color: var(--dark-2) !important;
+}
+body {
+  background-color: var(--light-1);
+}
 .underline {
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -67,7 +76,7 @@ header {
   padding-bottom: 24px;
 }
 .sub-text {
-  color: var(--dark-2);
+  color: var(--dark-1);
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
@@ -121,7 +130,6 @@ header {
 .companies-icons {
   background-color: var(--light-1);
   border-radius: 16px;
-  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.12);
   margin-bottom: 57px;
   column-gap: 28px;
   row-gap: 28px;
@@ -230,12 +238,16 @@ header {
   background-color: var(--light-2);
   margin-bottom: 64px;
 }
+.line-2 {
+  width: 428px;
+  height: 2px;
+  background-color: var(--light-2);
+}
 /* second-hero */
 .hero-but-different {
   padding-left: 32px;
   position: relative;
   overflow: hidden;
-  padding-bottom: 30px;
 }
 .hero-but-different > .hero-title {
   font-size: 56px;
@@ -260,16 +272,19 @@ header {
 }
 /* soc link */
 .soc-link {
-  margin-top: 32px;
+  margin-top: 63px;
 }
 .cta-text {
   font-size: 20px;
   color: var(--dark-2);
   font-weight: 400;
   margin-bottom: 32px;
+  margin-top: 30px;
 }
 .cta-collection {
   font-size: 20px;
+  font-weight: 400;
+  color: var(--dark-2);
 }
 .cta-flex {
   display: flex;
@@ -277,7 +292,6 @@ header {
   gap: 64px;
 }
 .soc-link > img {
-  /* padding-bottom: 30px; */
   margin-bottom: 30px;
   width: 198px;
   height: 36px;
@@ -285,7 +299,7 @@ header {
 .links-ul {
   margin: 0;
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 .links-ul li {
   color: var(--dark-3);
@@ -314,6 +328,11 @@ header {
   text-transform: uppercase;
   margin-bottom: 28px;
 }
+.ul-size > li,
+.ul-smaller-size > li {
+  color: var(--dark-2);
+  font-size: 20px;
+}
 .cta-box > li {
   color: var(--dark-2);
   font-size: 20px;
@@ -326,7 +345,149 @@ header {
 footer {
   padding-top: 64px;
   padding-bottom: 105px;
+}
+.foot-flex > p {
   color: var(--dark-4);
   font-size: 20px;
   line-height: 20px;
+}
+/* medias 1440px */
+@media screen and (min-width: 1440px) {
+  .container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  header {
+    padding-left: 80px;
+    padding-right: 80px;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .burger-menu-btn {
+    display: none;
+  }
+  .main-nav {
+    display: block;
+  }
+  .nav-list {
+    display: flex;
+    gap: 28px;
+    color: var(--dark-2);
+    font-size: 20px;
+  }
+  /* hero */
+  .hero-info {
+    padding-top: 158px;
+  }
+  .hero {
+    padding-left: 80px;
+    padding-right: 740px;
+  }
+  .hero-title {
+    color: var(--dark);
+    font-size: 96px;
+    font-weight: 900;
+    line-height: normal;
+    padding-bottom: 32px;
+  }
+  .hero-text {
+    padding-bottom: 41px;
+    padding-right: 83px;
+    font-size: 20px;
+  }
+  .snow-man {
+    left: 600px;
+    top: 51px;
+  }
+  .sign-up-btn {
+    margin-bottom: 200px;
+  }
+  /* free nft */
+  .free-nft {
+    max-width: 1280px;
+    border-radius: 15px;
+    padding-top: 154px;
+    padding-left: 64px;
+    margin-bottom: 125px;
+  }
+  .title {
+    padding-bottom: 24px;
+  }
+  /* companies */
+  .invis {
+    display: block;
+  }
+  .companies-icons {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 106.5px;
+    margin-bottom: 120px;
+  }
+  .rare-text {
+    padding-bottom: 56px;
+  }
+  /* rare auction */
+  .line,
+  .line-2 {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* hero but different */
+  .hero-but-different {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .hero-but-different > .hero-info {
+    padding-top: 56px;
+  }
+  .hero-but-different > .hero-title {
+    padding-bottom: 24px;
+  }
+  .different-hero-text {
+    padding: 0;
+    margin-bottom: 40px;
+    width: 537px;
+    height: 60px;
+  }
+  .different-hero-text > .invis {
+    display: inline-block;
+  }
+  .hero-but-different > .sign-up-btn {
+    margin-bottom: 120px;
+  }
+  .green-nft-full-size {
+    top: 25px;
+    left: 65%;
+  }
+  /* cta */
+  .soc-link {
+    margin-top: 120px;
+  }
+  .links-ul {
+    gap: 15px;
+  }
+  .cta-flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .cta-nav {
+    display: flex;
+    justify-content: start;
+    gap: 75px;
+  }
+  .bigger-gap {
+    padding-top: 0;
+  }
+  .foot-flex span,
+  .foot-flex p {
+    font-size: 20px;
+    color: var(--dark-4);
+  }
+  .foot-flex {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 71px;
+    padding-top: 120px;
+  }
 }
