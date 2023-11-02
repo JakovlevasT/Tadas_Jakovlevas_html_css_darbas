@@ -88,6 +88,7 @@ header {
   padding-bottom: 32px;
 }
 .sign-up-btn {
+  background-color: var(--light-1);
   text-align: center;
   font-size: 20px;
   font-weight: 600;
@@ -446,6 +447,21 @@ footer {
     padding-right: 60px;
     max-width: 1080px;
   }
+  .burger-menu-btn {
+    display: none;
+  }
+  .main-nav {
+    display: block;
+  }
+  .nav-list {
+    display: flex;
+    gap: 20px;
+    color: var(--dark-2);
+    font-size: 18px;
+  }
+  .nav-list li {
+    cursor: pointer;
+  }
   .hero {
     padding-left: 60px;
     padding-right: 530px;
@@ -525,23 +541,13 @@ footer {
     padding-left: 80px;
     padding-right: 80px;
     max-width: 1440px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .burger-menu-btn {
-    display: none;
-  }
-  .main-nav {
-    display: block;
   }
   .nav-list {
-    display: flex;
     gap: 28px;
-    color: var(--dark-2);
     font-size: 20px;
   }
   /* hero */
-  .hero-info {
+  s .hero-info {
     padding-top: 158px;
   }
   .hero {
@@ -587,6 +593,9 @@ footer {
   .companies-icons {
     gap: 106.5px;
     margin-bottom: 120px;
+  }
+  .companies-icons > .invis {
+    display: inline-block;
   }
   .rare-text {
     padding-bottom: 56px;
@@ -643,5 +652,8 @@ footer {
   }
   .bigger-gap {
     padding-top: 0;
+  }
+  footer .invis {
+    display: inline-block;
   }
 }
