@@ -415,7 +415,6 @@ footer {
   }
   .hero-but-different > .sign-up-btn {
     margin-bottom: 60px;
-    margin-top: 20px;
   }
   .different-hero-text {
     padding-right: 338px;
@@ -495,9 +494,6 @@ footer {
   .invis {
     display: inline-block;
   }
-  .super-rare {
-    margin-bottom: 60px;
-  }
   .rare-text {
     padding-bottom: 50px;
   }
@@ -541,6 +537,8 @@ footer {
     padding-left: 80px;
     padding-right: 80px;
     max-width: 1440px;
+    margin-top: 70px;
+    margin-bottom: 162px;
   }
   .nav-list {
     gap: 28px;
@@ -570,7 +568,7 @@ footer {
     width: 700px;
     height: 700px;
     left: 656px;
-    top: 101px;
+    top: -34px;
   }
   .sign-up-btn {
     margin-bottom: 200px;
@@ -631,7 +629,7 @@ footer {
     margin-bottom: 120px;
   }
   .green-nft-full-size {
-    top: 25px;
+    top: 47px;
     left: 65%;
   }
   /* cta */
